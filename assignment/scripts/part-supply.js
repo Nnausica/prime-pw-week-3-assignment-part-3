@@ -23,13 +23,16 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges.push(25));
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
-for( let i=0; i<supplyChanges.length; i++) {console.log ('6. Showing supply changes'), (x=supplyChanges[i]);
+console.log ('6. Showing supply changes'); 
+for( let i=0; i<supplyChanges.length; i++) {
+    x=supplyChanges[i];
 //    if it is a positive number (greater than 0), log 'Added x parts.' 
     if (x>0) {console.log('added', x, 'parts')};
 //    if the value is 0, log 'No Change.'
     if (x === 0) {console.log('No Change')};
 //    if the value is negative, format the log as 'Removed x parts.'
-    if (x <0) {console.log('Removed', x*-1, 'parts')}};
+    if (x <0) {console.log('Removed', x*-1, 'parts')}
+};
 // I included the *-1 so it read clearer, removed the double negative in the sentence. Wouldn't want to do this if there were more maths happening. 
 //console.log('6. Showing supplyChanges...');
 
@@ -53,7 +56,6 @@ const max=(supplyChanges[supplyChanges.length-1])//max is length of array minus 
 
 while (index<max) //conditional
 {   // while the conditional is true run this thing
-    //console.log('8. While loop supply changes');
     if (supplyChanges[index] >0) {console.log('added',supplyChanges[index],'parts')};  //if it is a positive number (greater than 0), log 'Added x parts.' 
     if (supplyChanges[index] === 0) {console.log('No Change')};//if the value is 0, log 'No Change.'
     if (supplyChanges[index] <0) {console.log('Removed', supplyChanges[index], 'parts')};//if the value is negative, format the log as 'Removed x parts.'

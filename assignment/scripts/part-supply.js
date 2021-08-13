@@ -23,7 +23,7 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges.push(25));
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
-for( let i=0; i<supplyChanges.length; i++) { {console.log ('value', x=supplyChanges[i])};
+for( let i=0; i<supplyChanges.length; i++) {console.log ('value', x=supplyChanges[i]);
 //    if it is a positive number (greater than 0), log 'Added x parts.' 
     if (x>0) {console.log('added', x, 'parts')};
 //    if the value is 0, log 'No Change.'

@@ -23,28 +23,37 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges.push(25));
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
-for( let i=0; i<supplyChanges.length; i++) {console.log ('value', x=supplyChanges[i]);
+for( let i=0; i<supplyChanges.length; i++) {console.log ('6. Showing supply changes'), (x=supplyChanges[i]);
 //    if it is a positive number (greater than 0), log 'Added x parts.' 
     if (x>0) {console.log('added', x, 'parts')};
 //    if the value is 0, log 'No Change.'
     if (x === 0) {console.log('No Change')};
 //    if the value is negative, format the log as 'Removed x parts.'
     if (x <0) {console.log('Removed', x*-1, 'parts')}};
-// I included the *-1 so it read clearer, removed the double negative in the sentence.
-
-
-console.log('6. Showing supplyChanges...');
+// I included the *-1 so it read clearer, removed the double negative in the sentence. Wouldn't want to do this if there were more maths happening. 
+//console.log('6. Showing supplyChanges...');
 
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
-// 7. Rewrite the `for` loop from #6 as a `for of` loop. 
-console.log('7. Showing supplyChanges with "for of" loop');
+// 7. Rewrite the `for` loop from #6 as a `for of` loop.
+
+for ( parts of supplyChanges)//conditional 
+{console.log ('7. Showing Supply Change')
+    if (parts >0) {console.log(parts, 'added')};
+    if (parts === 0) {console.log(parts, 'No Change')};
+    if (parts <0) {console.log(parts, 'Removed')};
+}//actions to take
 
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
-console.log('8. Showing supplyChanges with "while" loop');
+
 
 
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
-console.log('9. Total supplies available is:');
+
+let inventory=0 //need to set the value of all our inventory
+
+for(let i=0; i<supplyChanges.length; i++)//conditional
+{inventory += supplyChanges[i];} //action to take.... add totals in the supply change array to inventory
+console.log('9. inventory amount', inventory);//console log the total.

@@ -45,8 +45,19 @@ for ( parts of supplyChanges)//conditional
     if (parts <0) {console.log(parts, 'Removed')};
 }//actions to take
 
+
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 
+let index= 0
+const max=(supplyChanges[supplyChanges.length-1])//max is length of array minus 1
+
+while (index<max) //conditional
+{   // while the conditional is true run this thing
+    //console.log('8. While loop supply changes');
+    if (supplyChanges[index] >0) {console.log('added',supplyChanges[index],'parts')};  //if it is a positive number (greater than 0), log 'Added x parts.' 
+    if (supplyChanges[index] === 0) {console.log('No Change')};//if the value is 0, log 'No Change.'
+    if (supplyChanges[index] <0) {console.log('Removed', supplyChanges[index], 'parts')};//if the value is negative, format the log as 'Removed x parts.'
+    index++}
 
 
 // 9. Write a loop to determine the total number of parts available by

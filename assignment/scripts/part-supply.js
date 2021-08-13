@@ -32,7 +32,7 @@ for( let i=0; i<supplyChanges.length; i++) {
     if (x === 0) {console.log('No Change')};
 //    if the value is negative, format the log as 'Removed x parts.'
     if (x <0) {console.log('Removed', x*-1, 'parts')}
-};
+}; 
 // I included the *-1 so it read clearer, removed the double negative in the sentence. Wouldn't want to do this if there were more maths happening. 
 //console.log('6. Showing supplyChanges...');
 
